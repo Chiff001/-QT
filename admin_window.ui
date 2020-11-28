@@ -28,7 +28,7 @@
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>Данные учебников</string>
      </attribute>
      <widget class="QTableWidget" name="tableWidget">
       <property name="geometry">
@@ -82,7 +82,7 @@
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>Данные пользователей</string>
      </attribute>
      <widget class="QPushButton" name="pushButton2">
       <property name="geometry">
@@ -136,7 +136,7 @@
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
-      <string>Page</string>
+      <string>Данные учеников</string>
      </attribute>
      <widget class="QPushButton" name="pushButton3">
       <property name="geometry">

@@ -180,6 +180,9 @@ class BookDialog(QDialog):
             return
         else:
             image = f'"{image}"'
+        if not n.isdigit():
+            self.label_7.setText('не верный формат кол-ва учебников')
+            return
         cur = self.con.cursor()
         cur.execute(f'insert into library(id, name, author, grade, image, n) values ({book_id}, "{name}", "{author}", "{grade}", {image}, {n})').fetchall()
 
@@ -203,6 +206,9 @@ class BookDialog(QDialog):
             return
         else:
             image = f'"{image}"'
+        if not n.isdigit():
+            self.label_7.setText('не верный формат кол-ва учебников')
+            return
         cur = self.con.cursor()
 
         cur.execute(f'update library set name = "{name}", author = "{author}", grade = "{grade}", image = {image}, n = {n} where id = {book_id}').fetchall()
